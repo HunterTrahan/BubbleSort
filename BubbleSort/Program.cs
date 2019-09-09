@@ -123,7 +123,7 @@ namespace BubbleSort
             int end = arrayToSort.Length - 1;
             int number;
 
-            //nark that we need to sort
+            //mark that we need to sort
             bool Sorted = false;
             //while we need to sort
             while (!Sorted)
