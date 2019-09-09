@@ -14,7 +14,7 @@ namespace BubbleSort
             //this is intitialization
             int number;
             //this is declaration
-            int nmber2;
+            
 
             
            void Print()
@@ -25,17 +25,24 @@ namespace BubbleSort
                 }
            }
 
+            //nark that we need to sort
            bool Sorted = false;
+            //while we need to sort
            while (!Sorted)
            {
                 Sorted = true;
+                //Iterate through array
                 for (int i = 0; i < arrayToSort.Length-1; i++)
                 {
+                    //if current item and the next arem't in order
                     if (arrayToSort[i] > arrayToSort[i+1])
                     {
+                        //swap them
                         number = arrayToSort[i];
                         arrayToSort[i] = arrayToSort[i+1];
                         arrayToSort[i + 1] = number;
+
+                        //mark that we need to sort
                         Sorted = false;
                         
                     }
